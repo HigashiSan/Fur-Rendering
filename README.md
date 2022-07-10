@@ -4,7 +4,10 @@ My survey on fur rendering in unity URP.
 Up to now, I have tried to render fur in two ways, both are based on geometry shader.And surport shadows and simple lighting calculation.
 
 One is to enlarge the model several times along the normal vector, then discard some parts by a texture which defines the fur area:
-![image](https://user-images.githubusercontent.com/56297955/178151308-bdd2f33b-1b1e-4fc1-b38a-907a7a34b044.png)       ![image](https://user-images.githubusercontent.com/56297955/178151323-a30d9a1b-f0cc-4899-a603-1efff1b864ee.png)
+
+![image](https://user-images.githubusercontent.com/56297955/178151308-bdd2f33b-1b1e-4fc1-b38a-907a7a34b044.png)   
+
+![image](https://user-images.githubusercontent.com/56297955/178151323-a30d9a1b-f0cc-4899-a603-1efff1b864ee.png)
 
 And can also set the layers which define how many times the model enlarged.
 
@@ -19,5 +22,11 @@ Here is the picture I found in NVIDIA's talk:
 
 This way rely on the mesh of the number of triangles of the model. So I also use Tessellation Shader to increase the density of the hair and add the move to the fur.
 
-https://user-images.githubusercontent.com/56297955/178152669-500cde6c-a069-4d55-81db-b9d7024c18c2.mp4
+
+
+https://user-images.githubusercontent.com/56297955/178152900-cf58b9dc-d654-4568-b02b-88a110e72b88.mp4
+
+
+
+https://user-images.githubusercontent.com/56297955/178152931-e162ba9d-6a11-4478-93c7-3bdfee330e7b.mp4
 
